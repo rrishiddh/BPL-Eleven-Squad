@@ -1,6 +1,7 @@
 import AvailablePlayers from "./components/AvailablePlayers";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
+import PlayerCard from "./components/PlayerCard";
 
 const App = () => {
   return (
@@ -13,6 +14,10 @@ const App = () => {
 
       {/* available player */}
       <AvailablePlayers></AvailablePlayers>
+
+      {/* player card  */}
+      <PlayerCard></PlayerCard>
+      
     </div>
   );
 };
