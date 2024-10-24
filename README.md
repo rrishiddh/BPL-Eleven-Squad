@@ -10,8 +10,8 @@
 
 ### Technologies Used:
 
-- The Navbar should match the Figma design and be responsive.
-- Display the user's money in the Navbar, initially it will be 0. 
+- 
+-  
 
 ### Key Features:
 

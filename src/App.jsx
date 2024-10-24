@@ -1,3 +1,4 @@
+import AvailablePlayers from "./components/AvailablePlayers";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
 
@@ -11,6 +12,7 @@ const App = () => {
       <Banner></Banner>
 
       {/* available player */}
+      <AvailablePlayers></AvailablePlayers>
     </div>
   );
 };

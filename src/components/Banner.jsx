@@ -1,8 +1,20 @@
+import background from '../assets/bg-shadow.png'
+import img1 from '../assets/banner-main.png'
 
 const Banner = () => {
     return (
-        <div>
-            banner
+        <div className="w-[90%] mx-auto">
+            <div className="min-h-screen  bg-cover bg-no-repeat rounded-3xl bg-slate-950 mx-auto text-center flex items-center justify-center "
+                style={{
+                    backgroundImage: `url(${background})`,                    
+                }}>
+                    <span className='space-y-6'>
+                          <img className='mx-auto' src={img1} alt="" />  
+                        <h2 className='text-white text-3xl font-bold' >Assemble Your Ultimate Dream 11 Cricket Team</h2>    
+                        <p className='text-gray-400 pb-4'>Beyond Boundaries Beyond Limits</p>
+                        <button className='btn bg-yellow-300 font-bold text-xl px-4'>Claim Free Credit</button>
+                    </span>                
+            </div>
         </div>
     );
 };

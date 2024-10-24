@@ -29,9 +29,9 @@ const Header = () => {
                     <li><a>Schedules</a></li>                    
                 </ul>
                 </div>
-                <div className='items-center  lg:flex'>
+                <div className='items-center  lg:flex text-center'>
                 <img className='w-16 h-16  mx-auto' src={logo} alt="" />
-                <span className="text-xl font-bold">BLP Eleven Squad</span>
+                <span className="text-xl max-sm:hidden font-bold">BLP Eleven Squad</span>
                 </div>
                 
             </div>
