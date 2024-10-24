@@ -1,3 +1,4 @@
+import logo from '../assets/logo-footer.png'
 
 const Header = () => {
     return (
@@ -28,8 +29,11 @@ const Header = () => {
                     <li><a>Schedules</a></li>                    
                 </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">BLP Eleven Squad</a>
-                <img href='../assets/logo.png' alt="" />
+                <div className='items-center  lg:flex'>
+                <img className='w-16 h-16  mx-auto' src={logo} alt="" />
+                <span className="text-xl font-bold">BLP Eleven Squad</span>
+                </div>
+                
             </div>
             <div className="navbar-end gap-2 flex">
                 <div className="max-sm:hidden">
