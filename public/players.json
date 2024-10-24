@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "name": "Virat Kohli",
+      "image": "https://i.ibb.co.com/rmkbGQL/virat-kohli.jpg",
+      "country": "India",
+      "batting_bowling": "right-hand bat",
+      "role": "batsman",
+      "bid_price": 110000
+    },
+    {
+      "id": 2,
+      "name": "Kane Williamson",
+      "image": "https://i.ibb.co.com/vcmB8qh/Kane-Williamson.png",
+      "country": "New Zealand",
+      "batting_bowling": "right-hand bat",
+      "role": "batsman",
+      "bid_price": 105000
+    },
+    {
+      "id": 3,
+      "name": "Steve Smith",
+      "image": "https://i.ibb.co.com/SXZ8f4S/Steve-Smith.jpg",
+      "country": "Australia",
+      "batting_bowling": "right-hand bat",
+      "role": "batsman",
+      "bid_price": 100000
+    },
+    {
+      "id": 4,
+      "name": "Ben Stokes",
+      "image": "https://i.ibb.co.com/cgKTc4c/Ben-Stokes.jpg",
+      "country": "England",
+      "batting_bowling": "left-hand bat / right-arm fast",
+      "role": "all-rounder",
+      "bid_price": 95000
+    },
+    {
+      "id": 5,
+      "name": "Babar Azam",
+      "image": "https://i.ibb.co.com/QDsgkrc/Babar-Azam.jpg",
+      "country": "Pakistan",
+      "batting_bowling": "right-hand bat",
+      "role": "batsman",
+      "bid_price": 98000
+    },
+    {
+      "id": 6,
+      "name": "Jasprit Bumrah",
+      "image": "https://i.ibb.co.com/M8qycy6/Jasprit-Bumrah.jpg",
+      "country": "India",
+      "batting_bowling": "right-arm fast",
+      "role": "bowler",
+      "bid_price": 90000
+    },
+    {
+      "id": 7,
+      "name": "Pat Cummins",
+      "image": "https://i.ibb.co.com/C53RKxy/Pat-Cummins.jpg",
+      "country": "Australia",
+      "batting_bowling": "right-arm fast",
+      "role": "bowler",
+      "bid_price": 95000
+    },
+    {
+      "id": 8,
+      "name": "Trent Boult",
+      "image": "https://i.ibb.co.com/k88H3JG/Trent-Boult.jpg",
+      "country": "New Zealand",
+      "batting_bowling": "left-arm fast",
+      "role": "bowler",
+      "bid_price": 89000
+    },
+    {
+      "id": 9,
+      "name": "Shakib Al Hasan",
+      "image": "https://i.ibb.co.com/PYTwkyT/Shakib-Al-Hasan.jpg",
+      "country": "Bangladesh",
+      "batting_bowling": "left-hand bat / left-arm orthodox",
+      "role": "all-rounder",
+      "bid_price": 87000
+    },
+    {
+      "id": 10,
+      "name": "Rashid Khan",
+      "image": "https://i.ibb.co.com/LzRTb1k/Rashid-Khan.png",
+      "country": "Afghanistan",
+      "batting_bowling": "right-hand bat / right-arm leg-spin",
+      "role": "bowler",
+      "bid_price": 91000
+    },
+    {
+      "id": 11,
+      "name": "Joe Root",
+      "image": "https://i.ibb.co.com/GRJMpNb/Joe-Root.jpg",
+      "country": "England",
+      "batting_bowling": "right-hand bat",
+      "role": "batsman",
+      "bid_price": 97000
+    },
+    {
+      "id": 12,
+      "name": "David Warner",
+      "image": "https://i.ibb.co.com/xzK6CV4/David-Warner.jpg",
+      "country": "Australia",
+      "batting_bowling": "left-hand bat",
+      "role": "batsman",
+      "bid_price": 99000
+    }
+  ]
+  

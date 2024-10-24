@@ -1,7 +1,9 @@
 
-## Project Name: BPL Eleven Squad
 
-# <img width="30px" src="assets/logo.png"/>BPL Eleven Squad
+
+# <img width="30px" src="./src/assets/logo-footer.png"/>BPL Eleven Squad
+
+## Project Name: BPL Eleven Squad
 
 **A brief description: **
 ---
