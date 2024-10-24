@@ -2,7 +2,7 @@ import logo from '../assets/logo-footer.png'
 
 const Header = () => {
     return (
-        <div className="w-[90%] mx-auto">
+        <div className="w-[90%] mx-auto ">
             <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">

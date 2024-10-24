@@ -1,5 +1,6 @@
 import AvailablePlayers from "./components/AvailablePlayers";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import PlayerCard from "./components/PlayerCard";
 
@@ -17,7 +18,12 @@ const App = () => {
 
       {/* player card  */}
       <PlayerCard></PlayerCard>
-      
+
+      {/* newsletter  */}
+
+      {/* footer  */}
+      <Footer></Footer>
+
     </div>
   );
 };
