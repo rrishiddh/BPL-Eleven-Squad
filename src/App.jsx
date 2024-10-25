@@ -45,7 +45,7 @@ const App = () => {
     
   }
 
-  const[presentCoin,setPresentCoin] = useState("0");
+  const[presentCoin,setPresentCoin] = useState(0);
   const increaseCoin = (coin) => {   
     if (presentCoin <= 0){ 
     setPresentCoin(coin);

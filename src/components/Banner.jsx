@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import background from '../assets/bg-shadow.png'
 import img1 from '../assets/banner-main.png'
 
@@ -22,4 +23,7 @@ const Banner = ({increaseCoin}) => {
     );
 };
 
+Banner.propTypes = {
+    increaseCoin: PropTypes.func,
+}
 export default Banner;

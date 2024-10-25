@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 
 const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDetails, singlePlayerDetails,removePlayer}) => { 
@@ -105,4 +106,11 @@ const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDet
     );
 };
 
+AvailablePlayers.propTypes = {
+    handleAvailablePlayer: PropTypes.func,
+    availablePlayer: PropTypes.string,
+    addedPlayerDetails: PropTypes.func,
+    singlePlayerDetails: PropTypes.array,
+    removePlayer: PropTypes.func,
+}
 export default AvailablePlayers;

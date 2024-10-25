@@ -1,4 +1,5 @@
-import logo from '../assets/logo-footer.png'
+import PropTypes from 'prop-types';
+import logo from '../assets/logo-footer.png';
 
 const Header = ({presentCoin}) => {
     return (
@@ -55,5 +56,9 @@ const Header = ({presentCoin}) => {
         
     );
 };
+
+Header.propTypes = {
+    presentCoin: PropTypes.number,
+}
 
 export default Header;

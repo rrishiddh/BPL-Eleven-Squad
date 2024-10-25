@@ -42,7 +42,7 @@ const Footer = () => {
                      </nav>
                      <form>
                          <h6 className="footer-title">Subscribe</h6>
-                         <p className="md:w-[80%]">Subscribe to our newsletter for the latest updates.</p>
+                         <p className="md:w-[80%] inter">Subscribe to our newsletter for the latest updates.</p>
                          <fieldset className="form-control w-[50%]">
                          
                          <div className="join mt-6">
