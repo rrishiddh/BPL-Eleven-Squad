@@ -16,7 +16,7 @@ const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDet
             {/* btn toggle  */}
             <div className="flex justify-between mb-10">
                 <h2 className={`${availablePlayer === "available" ? "text-2xl font-bold": "hidden"}`}>Available Players</h2>
-                <h2 className={`${availablePlayer === "selected" ? "md:text-2xl text-xl font-bold": "hidden"}`}>Selected Players ({singlePlayerDetails.length})</h2>
+                <h2 className={`${availablePlayer === "selected" ? "md:text-2xl text-xl font-bold": "hidden"}`}>Selected Players ({singlePlayerDetails.length}/6)</h2>
                 <span className="space-x-0">
                     
                     <button onClick={() => handleAvailablePlayer("available")} className={`${availablePlayer === "available"?"bg-yellow-300 font-bold text-black":"bg-transparent text-gray-500 border border-gray-300"} py-2 px-4 rounded-l-lg `}> Available </button>                

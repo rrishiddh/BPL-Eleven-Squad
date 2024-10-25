@@ -1,6 +1,6 @@
 import logo from '../assets/logo-footer.png'
 
-const Header = () => {
+const Header = ({presentCoin}) => {
     return (
         <div className='sticky top-0 z-50  bg-base-100'>
             <div className="w-[90%] mx-auto ">
@@ -45,7 +45,7 @@ const Header = () => {
                 <li><a>Schedules</a></li>      
                 </ul>
                 </div>                
-                <a className="btn">0 coin <img className="w-7 h-7" src="https://img.icons8.com/?size=100&id=sPBQkuep9vDA&format=png&color=000000" alt="" /></a>
+                <a className="btn">{presentCoin} coin <img className="w-7 h-7" src="https://img.icons8.com/?size=100&id=sPBQkuep9vDA&format=png&color=000000" alt="" /></a>
                 
             </div> 
                       
