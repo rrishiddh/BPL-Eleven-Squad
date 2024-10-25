@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 
 const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDetails, singlePlayerDetails,removePlayer}) => { 
-    const [availablePlayers, setavailablePlayer] = useState([]);
+    const [availablePlayers, setAvailablePlayer] = useState([]);
 
     useEffect(()=>{
-        fetch("../../public/players.json")
+        fetch("players.json")
         .then(res => res.json())
-        .then(data => setavailablePlayer(data))
+        .then(data => setAvailablePlayer(data))
     },[])
 
    
@@ -60,7 +60,7 @@ const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDet
                                 <p>{availablePlayer.right_left_hand}</p>
                             </span>
                             <span className="flex justify-between ">
-                                <p className="font-bold ">Speciality: </p>
+                                <p className="font-bold ">Specialty: </p>
                                 <p className=" ml-9">{availablePlayer.batting_bowling}</p>
                             </span>
                         </div>

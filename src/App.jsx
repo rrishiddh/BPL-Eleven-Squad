@@ -3,8 +3,11 @@ import AvailablePlayers from "./components/AvailablePlayers";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
+    
   const[availablePlayer,setAvailablePlayer] = useState("available");
 
   const handleAvailablePlayer = (status) => {    
@@ -14,6 +17,10 @@ const App = () => {
   const[singlePlayerDetails, setSinglePlayerDetails]   = useState([]);
   const addedPlayerDetails = player => {
     if(presentCoin > 0){
+      if(presentCoin <= 0){
+        toast.warn("Claim Free Coin First!", {
+        position: "top-center"});
+      }else{        
       const isAvailable = singlePlayerDetails.find(
         previousPlayer => previousPlayer.id === player.id
       )    
@@ -23,14 +30,21 @@ const App = () => {
           setSinglePlayerDetails([...singlePlayerDetails,player])
           const newCoin = presentCoin - player.bid_price;
           setPresentCoin(newCoin);
+          toast.success(`${player.name} is Added to Your Team!`, {
+            position: "top-center"});
         } else{
-          alert('Player Already Added!')
+          toast.error("Player Already Added!", {
+            position: "top-center"});
         }      
      }else{
-       alert ('Already 6 Players Added!')
+       toast.warn("Already 6 Players Added!", {
+        position: "top-center"});
      }
+    
+      }
     }else{
-      alert ('Claim Free Coin First!')
+      toast.warn("Claim Free Coin First!", {
+        position: "top-center"});
     }    
   };
 
@@ -42,16 +56,17 @@ const App = () => {
     const newCoin2 = presentCoin + removedPlayer.bid_price ;
     setPresentCoin(newCoin2);
 
+    toast.warn(`${removedPlayer.name} is Removed!`);
     
   }
 
   const[presentCoin,setPresentCoin] = useState(0);
   const increaseCoin = (coin) => {   
-    if (presentCoin <= 0){ 
-    setPresentCoin(coin);
-    }else{
-      alert('already coin added')
-    }
+    
+      toast.success("Free Coin Added!", {
+        position: "top-center"});
+    setPresentCoin(prevCoin => prevCoin + coin);
+   
   };
 
 
@@ -71,6 +86,8 @@ const App = () => {
       {/* footer  */}
       <Footer></Footer>
 
+    {/* React-Toastify  */}
+      <ToastContainer/>
     </div>
   );
 };
