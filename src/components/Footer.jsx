@@ -12,8 +12,8 @@ const Footer = () => {
                  <div className="flex justify-center">
                      <input 
                          type="email" 
-                         placeholder="Enter your email" 
-                         className="input input-bordered input-lg rounded-l-lg lg:w-[40%]"
+                         placeholder="Your Email" 
+                         className="input input-bordered input-lg rounded-l-lg w-[40%]"
                      />
                      <button className="btn btn-lg bg-gradient-to-r from-pink-400 to-yellow-400  font-semibold rounded-lg">
                          Subscribe
@@ -43,16 +43,14 @@ const Footer = () => {
                      <form>
                          <h6 className="footer-title">Subscribe</h6>
                          <p className="md:w-[80%] inter">Subscribe to our newsletter for the latest updates.</p>
-                         <fieldset className="form-control w-[50%]">
                          
-                         <div className="join mt-6">
+                         <div className="join mt-6 max-sm:w-[50%]">
                              <input
                              type="text"
                              placeholder="Enter Your Email"
                              className="input input-bordered join-item" />
                              <button className="btn  join-item text-black bg-gradient-to-r from-pink-400 to-yellow-400  font-semibold">Subscribe</button>
                          </div>
-                         </fieldset>
                      </form>
              </footer>
  
