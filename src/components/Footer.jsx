@@ -6,7 +6,7 @@ const Footer = () => {
             <div className=" bg-black text-gray-300  p-10 mx-auto relative ">
              
              
-             <div className="w-[90%] mx-auto bg-gradient-to-r from-blue-100 to-orange-100 py-16 rounded-lg text-center absolute  -top-36 text-black outline  outline-offset-8 outline-white max-sm:right-5">
+             <div className="w-[90%] mx-auto bg-gradient-to-r from-blue-100 to-orange-100 py-16 rounded-lg text-center absolute  -top-36 text-black outline  outline-offset-8 outline-white max-md:right-5 lg:right-14">
                  <h2 className="text-3xl font-bold my-4">Subscribe to our Newsletter</h2>
                  <p className="mb-6 text-lg">Get the latest updates and news right in your inbox!</p>
                  <div className="flex justify-center">
@@ -23,7 +23,7 @@ const Footer = () => {
 
              </div>           
   
-              <img className='mx-auto pt-40 pb-20' src={img} alt="" />  
+              <img className='mx-auto max-sm:mt-20 pt-40 pb-20' src={img} alt="" />  
  
  
              <footer className="footer w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-3 ">                   
@@ -44,10 +44,8 @@ const Footer = () => {
                          <h6 className="footer-title">Subscribe</h6>
                          <p className="md:w-[80%]">Subscribe to our newsletter for the latest updates.</p>
                          <fieldset className="form-control w-[50%]">
-                         <label className="label">
-                             <span className="label-text">Enter your email address</span>
-                         </label>
-                         <div className="join">
+                         
+                         <div className="join mt-6">
                              <input
                              type="text"
                              placeholder="Enter Your Email"

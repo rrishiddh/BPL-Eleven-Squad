@@ -28,7 +28,7 @@ const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDet
 
             {/* availablePlayer */}
             <div className={`${availablePlayer === "available" ? "": "hidden"}`}>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
                     availablePlayers.map(availablePlayer=> (
 
@@ -48,7 +48,7 @@ const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDet
                             <h2 className="text-gray-500 ">{availablePlayer.country}</h2>
                             </span>
                             <span>
-                            <button className="btn uppercase">{availablePlayer.role}</button>
+                            <button className="btn font-semibold uppercase bg-gradient-to-r from-pink-300 to-yellow-300  ">{availablePlayer.role}</button>
                             </span>
                         </div>
                         <hr className="my-3"/>

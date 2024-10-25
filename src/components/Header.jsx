@@ -7,7 +7,7 @@ const Header = ({presentCoin}) => {
             <div className="navbar ">
             <div className="navbar-start">
                 <div className="dropdown">
-                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -30,14 +30,14 @@ const Header = ({presentCoin}) => {
                     <li><a>Schedules</a></li>                    
                 </ul>
                 </div>
-                <div className='items-center  lg:flex text-center'>
+                <div className='items-center flex text-center'>
                 <img className='w-16 h-16  mx-auto' src={logo} alt="" />
                 <span className="text-xl max-sm:hidden font-bold">BLP Eleven Squad</span>
                 </div>
                 
             </div>
             <div className="navbar-end gap-2 flex">
-                <div className="max-sm:hidden">
+                <div className="max-md:hidden">
                 <ul className="menu menu-horizontal px-1">
                 <li><a>Home</a></li>
                 <li><a>Fixture</a></li>

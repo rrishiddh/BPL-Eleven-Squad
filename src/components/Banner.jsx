@@ -12,8 +12,8 @@ const Banner = ({increaseCoin}) => {
                 }}>
                     <span className='space-y-6'>
                           <img className='mx-auto' src={img1} alt="" />  
-                        <h2 className='text-white text-3xl font-bold' >Assemble Your Ultimate Dream 11 Cricket Team</h2>    
-                        <p className='text-gray-400 pb-4'>Beyond Boundaries Beyond Limits</p>
+                        <h2 className='text-white text-3xl font-bold ' >Assemble Your Ultimate Dream 11 Cricket Team</h2>    
+                        <p className='text-gray-400 pb-4 inter'>Beyond Boundaries Beyond Limits</p>
                         <button onClick={()=>increaseCoin(700000)} className='btn bg-yellow-300 font-bold text-xl px-4 outline  outline-offset-8 outline-yellow-300'>Claim Free Credit</button>
                         
                     </span>                
