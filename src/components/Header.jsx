@@ -2,8 +2,9 @@ import logo from '../assets/logo-footer.png'
 
 const Header = () => {
     return (
-        <div className="w-[90%] mx-auto ">
-            <div className="navbar bg-base-100">
+        <div className='sticky top-0 z-50  bg-base-100'>
+            <div className="w-[90%] mx-auto ">
+            <div className="navbar ">
             <div className="navbar-start">
                 <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,6 +51,8 @@ const Header = () => {
                       
             </div>
         </div>
+        </div>
+        
     );
 };
 

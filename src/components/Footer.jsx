@@ -2,11 +2,11 @@ import img from '../assets/logo-footer.png'
 
 const Footer = () => {
     return (
-        <div className="mt-52">
+        <div className="mt-52 ">
             <div className=" bg-black text-gray-300  p-10 mx-auto relative ">
              
              
-             <div className="w-[90%] mx-auto bg-gradient-to-r from-blue-100 to-orange-100 py-16 rounded-lg text-center absolute  -top-36 text-black">
+             <div className="w-[90%] mx-auto bg-gradient-to-r from-blue-100 to-orange-100 py-16 rounded-lg text-center absolute  -top-36 text-black outline  outline-offset-8 outline-white max-sm:right-5">
                  <h2 className="text-3xl font-bold my-4">Subscribe to our Newsletter</h2>
                  <p className="mb-6 text-lg">Get the latest updates and news right in your inbox!</p>
                  <div className="flex justify-center">
@@ -52,7 +52,7 @@ const Footer = () => {
                              type="text"
                              placeholder="Enter Your Email"
                              className="input input-bordered join-item" />
-                             <button className="btn btn-primary join-item">Subscribe</button>
+                             <button className="btn  join-item text-black bg-gradient-to-r from-pink-400 to-yellow-400  font-semibold">Subscribe</button>
                          </div>
                          </fieldset>
                      </form>
