@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDetails, singlePlayerDetails}) => { 
+const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDetails, singlePlayerDetails,removePlayer}) => { 
     const [availablePlayers, setavailablePlayer] = useState([]);
 
     useEffect(()=>{
@@ -9,12 +9,14 @@ const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDet
         .then(data => setavailablePlayer(data))
     },[])
 
+   
+
     return (
         <div className="w-[90%] mx-auto my-16">
             {/* btn toggle  */}
             <div className="flex justify-between mb-10">
                 <h2 className={`${availablePlayer === "available" ? "text-2xl font-bold": "hidden"}`}>Available Players</h2>
-                <h2 className={`${availablePlayer === "selected" ? "text-2xl font-bold": "hidden"}`}>Selected Players ({singlePlayerDetails.length})</h2>
+                <h2 className={`${availablePlayer === "selected" ? "md:text-2xl text-xl font-bold": "hidden"}`}>Selected Players ({singlePlayerDetails.length})</h2>
                 <span className="space-x-0">
                     
                     <button onClick={() => handleAvailablePlayer("available")} className={`${availablePlayer === "available"?"bg-yellow-300 font-bold text-black":"bg-transparent text-gray-500 border border-gray-300"} py-2 px-4 rounded-l-lg `}> Available </button>                
@@ -89,7 +91,7 @@ const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDet
                         </div>
                     </div>
                     <div>
-                        <button className="btn btn-ghost"><img className="w-6 h-6" src="https://img.icons8.com/?size=100&id=87371&format=png&color=000000" alt="" /></button>
+                        <button onClick={()=>removePlayer(player.id)} className="btn btn-ghost"><img className="w-6 h-6" src="https://img.icons8.com/?size=100&id=87371&format=png&color=000000" alt="" /></button>
                     </div>
                 </div>
                 ))}
