@@ -56,7 +56,8 @@ const App = () => {
     const newCoin2 = presentCoin + removedPlayer.bid_price ;
     setPresentCoin(newCoin2);
 
-    toast.warn(`${removedPlayer.name} is Removed!`);
+    toast.warn(`${removedPlayer.name} is Removed!`, {
+      position: "top-center"});
     
   }
 

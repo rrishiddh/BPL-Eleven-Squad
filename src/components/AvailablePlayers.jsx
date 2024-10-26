@@ -89,6 +89,7 @@ const AvailablePlayers = ({handleAvailablePlayer,availablePlayer, addedPlayerDet
                         <div>
                             <h2 className="font-bold text-xl">{player.name}</h2>
                             <h2 className="text-gray-500">{player.batting_bowling}</h2>                          
+                            <h2 className="text-gray-500 ">${player.bid_price}</h2>                          
                         </div>
                     </div>
                     <div>
